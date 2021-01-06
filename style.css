@@ -1,0 +1,254 @@
+/* Main */
+
+body {
+    text-align: center;
+    background-image: url(img/bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+h1 {
+    font-family: tbcinergothic-std, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+h2 {
+    font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+h3 {
+    font-family: a-otf-jun-pro, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+}
+
+p {
+    font-family: a-otf-jun-pro, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.content {
+    border-radius: 20px;
+    width: 800px;
+    padding: 20px 75px;
+    margin: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+.unView {
+    display: none;
+}
+
+/* img */
+
+#imgFrame {
+    width: 100%;
+    height: 500px;
+}
+
+#imgFrame img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+#img_list {
+    width: 100%;
+    display: inline-block;
+    vertical-align: bottom;
+    padding: 15px;
+}
+
+.thumbnail {
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+/* SiteLink */
+
+.siteLink img {
+    transition-duration: 0.3s;
+    border-radius: 30px;
+    margin: 15px;
+}
+
+.siteLink img:hover {
+    margin: 15px;
+    transition-duration: 0.3s;
+    transform: scale(1.1);
+    opacity: 0.9;
+    border-radius: 30px;
+}
+
+.link:hover {
+    filter: alpha(opacity=80);
+    -ms-filter: "alpha(opacity=80)";
+    -moz-opacity: 0.8;
+    -khtml-opacity: 0.8;
+    /*ちょろめパイセン*/
+    opacity: 0.8;
+    zoom: 1;
+}
+
+/* footer */
+
+footer p {
+    color: white;
+}
+
+/* PageTop */
+
+#page_Top {
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+}
+
+#page_Top i {
+    padding-top: 12px;
+    padding-right: 7px;
+}
+
+#page_Top a {
+    display: block;
+    z-index: 999;
+    padding: 10px 0 0 10px;
+    border-radius: 40px;
+    width: 50px;
+    height: 50px;
+    background-color: #9fd6d2;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+}
+
+#page_Top a:hover {
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+/* mainNav */
+
+.mainNav h2 {
+    display: none;
+}
+
+.mainNav li.current {
+    background: rgb(50, 175, 46);
+    border-radius: 20px;
+}
+
+.mainNav {
+    font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    list-style: none;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0px;
+    *zoom: 1;
+    background: rgb(100, 200, 100);
+    border-radius: 20px;
+}
+
+.mainNav ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+.mainNav:before, .mainNav:after {
+    /* floatClear */
+    content: " ";
+    display: table;
+}
+
+.mainNav:after {
+    clear: both;
+}
+
+.mainNav>li {
+    position: relative;
+    float: left;
+    list-style: none;
+    /* nav個数 */
+    width: 33.33%;
+    height: 50px;
+    line-height: 50px;
+    /* MainNavBGColor */
+}
+
+.mainNav li:hover {
+    /* MainNavBGColor(Hover) */
+    background: rgb(50, 175, 46);
+    border-radius: 20px;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+.mainNav>li a {
+    text-align: center;
+    display: block;
+    /* textColor */
+    color: #FFF;
+}
+
+.mainNav>li a:hover {
+    /* textColor(Hover) */
+    color: #555;
+}
+
+.mainNav li ul {
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    /* subMenuBG */
+    background: #9fd6d2;
+    border-radius: 20px;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+}
+
+.mainNav li ul li {
+    /* めにゅーの線 */
+    border-top: 1px solid rgb(100, 200, 100);
+    list-style: none;
+}
+
+.mainNav li ul li a:hover {
+    /* subMenuBGColor(Hover) */
+    background: rgb(7, 192, 177);
+    border-radius: 20px;
+    color: #555;
+}
+
+.mainNav li:hover ul {
+    width: 100%;
+    top: 50px;
+    visibility: visible;
+    opacity: 1;
+}
